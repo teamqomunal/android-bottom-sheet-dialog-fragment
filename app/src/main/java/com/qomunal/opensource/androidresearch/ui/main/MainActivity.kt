@@ -24,7 +24,7 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
     override fun initUI() {
         binding.apply {
             btnTest.setOnClickListener {
-                showToast("Yes u click on me")
+                MainBottomSheet().show(supportFragmentManager, "")
             }
         }
     }
